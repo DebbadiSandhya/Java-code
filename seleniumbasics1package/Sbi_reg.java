@@ -1,6 +1,9 @@
 package seleniumbasics1package;
 
+import java.util.logging.FileHandler;
+
 import org.openqa.selenium.By;
+import org.openqa.selenium.OutputType;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
@@ -26,7 +29,7 @@ public class Sbi_reg {
 		WebElement mobileno=c.findElement(By.id("mobileNo"));
 		   mobileno.sendKeys("8787849328");
 		   
-		
+		 
 	}
 
 }

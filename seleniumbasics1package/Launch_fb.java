@@ -8,10 +8,16 @@ public class Launch_fb {
 
 		ChromeDriver c=new ChromeDriver();
 		c.get("https://www.facebook.com");
-		c.findElement(By.name("email")).sendKeys("9908699473");
-		c.findElement(By.name("pass")).sendKeys("Sandy@143");
 		c.manage().window().maximize();
-		c.findElement(By.name("login")).click();
+
+		c.findElement(By.xpath("//input[@id='email']")).sendKeys("9908699473");
+		c.findElement(By.xpath("//input[@name='pass']")).sendKeys("Sandy@143");
+		c.findElement(By.xpath("//button[@name='login']")).click();
+		
+		
+		/*c.findElement(By.name("email")).sendKeys("9908699473");
+		c.findElement(By.name("pass")).sendKeys("Sandy@143");
+		c.findElement(By.name("login")).click();*/
 	}
 
 }
